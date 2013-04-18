@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application\ErrorController.cs" />
+    <Compile Include="Application\Membership\UrlAuthorizeAttribute.cs" />
     <Compile Include="Application\RadaCodeBaseController.cs" />
     <Compile Include="Application\RadaCodeViewEngine.cs" />
     <Compile Include="App_Start\RadaCodeWebCommon.cs" />
