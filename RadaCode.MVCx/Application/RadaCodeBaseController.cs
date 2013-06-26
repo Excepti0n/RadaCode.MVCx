@@ -86,6 +86,26 @@ namespace RadaCode.MVCx.Application
             }
         }
 
+        internal JsonResult StatusOk()
+        {
+            return Json(new { status = "RES: OK" });
+        }
+
+        internal JsonResult StatusOk(object resObject)
+        {
+            return Json(new { status = "RES: OK", payload = resObject });
+        }
+
+        internal JsonResult StatusFail()
+        {
+            return Json(new { status = "RES: FAIL" });
+        }
+
+        internal JsonResult StatusFail(string errorMessage)
+        {
+            return Json(new {status = "RES: FAIL", err = errorMessage});
+        } 
+
         #region Http404 handling
 
         protected override void HandleUnknownAction(string actionName)
